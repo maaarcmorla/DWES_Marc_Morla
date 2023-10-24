@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Repàs Formulari</h1>
+
+    <form action="./processa.php" method="get">
+        <fieldset>
+            <legend>Escriu el teu nom i selecciona el/els mòduls a cursar:</legend>
+
+            <label for="get-name">Nom i llinatges:</label>
+            <input id="get-name" type="text" name="name" />
+            <div>
+                <input type="radio" id="DWES" name="modul" value="DWES" checked />
+                <label for="DWES">Desenvolupament Web a Entorn Servidor</label>
+            </div>
+
+            <div>
+                <input type="radio" id="DWEC" name="modul" value="DWEC" />
+                <label for="DWEC">Desenvolupament Web a Entorn Client</label>
+            </div>
+
+            <div>
+                <input type="radio" id="ambdues" name="modul" value="ambdues" />
+                <label for="ambdues">Ambdues</label>
+            </div>
+        </fieldset>
+        <br><input type="submit" value="Envia" />
+    </form>
+</body>
+
+</html>
